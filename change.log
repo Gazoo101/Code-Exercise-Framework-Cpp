@@ -1,0 +1,25 @@
+Code-Exercise-Framework-Cpp ChangeLog
+-------------------------------------
+
+0.4
+------------------------
+- Changed: Transitioned away from trademark-named framework, to more genericly usable frame-work.
+- Changed: Transitioned away from recursive template calling, to simpler C++17 fold expression for type-to-string conversion.
+- Added: Option to choose between C++17 and C++20 in CMake Gui.
+
+0.3
+------------------------
+- Added: Transitioned to CMake
+- Added: Simplified README.md
+- Removed: superflous comments
+- Fixed: Improved variable naming
+- Removed: superflous header
+- Changed: header-guards to pragma once
+
+0.2
+------------------------
+- Added: Added link to simpler [Python version](Gazoo101/Codility-Python-Framework)
+
+0.1
+------------------------
+- Added: Everything.
