@@ -12,7 +12,9 @@
 #include "Framework/TestHelper.h"
 
 #include "Tasks/TaskExample.h"
+#include "Tasks/Leetcode/Task2391MinimumAmountOfTimeToCollectGarbage.h"
 
+// TODO: Upgrade each derived class to auto execute their self-run code via a registrar class.
 
 int main()
 {
@@ -20,6 +22,7 @@ int main()
 	std::vector<std::unique_ptr<TaskBase>> tasks;
 
 	tasks.push_back( std::make_unique<TaskExample>() );
+	tasks.push_back( std::make_unique<TaskTask2391>() );
 
 
 	// Add additional tasks here...

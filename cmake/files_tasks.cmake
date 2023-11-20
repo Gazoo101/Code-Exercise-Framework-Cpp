@@ -12,4 +12,7 @@ set(FILES_TASKS
 	# --- Add your own Task files below here ---
 	#"${PATH_APP_SRC}/Company/Task1.cpp"
 	#"${PATH_APP_SRC}/Company/Task1.h"
+
+	"${PATH_APP_SRC}/Tasks/Leetcode/Task2391MinimumAmountOfTimeToCollectGarbage.h"
+	"${PATH_APP_SRC}/Tasks/Leetcode/Task2391MinimumAmountOfTimeToCollectGarbage.cpp"
 )

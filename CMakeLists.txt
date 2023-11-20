@@ -17,13 +17,16 @@ set_property(CACHE CppStandard PROPERTY STRINGS "C++17" "C++20")
 cmake_path(SET PATH_APP "${CMAKE_CURRENT_SOURCE_DIR}")
 cmake_path(SET PATH_APP_SRC "${PATH_APP}/src")
 
-include( "${CMAKE_CURRENT_SOURCE_DIR}/cmake/files_framework.cmake")
-include( "${CMAKE_CURRENT_SOURCE_DIR}/cmake/files_tasks.cmake")
+include( "${CMAKE_CURRENT_SOURCE_DIR}/cmake/files_framework.cmake" )
+include( "${CMAKE_CURRENT_SOURCE_DIR}/cmake/files_tasks.cmake" )
 
 set(FILES_BASE
 	"${PATH_APP}/CMakeLists.txt"
 	"${PATH_APP}/change.log"
 	"${PATH_APP}/README.md"
+	
+	"${CMAKE_CURRENT_SOURCE_DIR}/cmake/files_framework.cmake"
+	"${CMAKE_CURRENT_SOURCE_DIR}/cmake/files_tasks.cmake"
 )
 
 # Merge all the lists of files together...
