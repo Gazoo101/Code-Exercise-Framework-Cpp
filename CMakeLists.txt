@@ -18,7 +18,7 @@ cmake_path(SET PATH_APP "${CMAKE_CURRENT_SOURCE_DIR}")
 cmake_path(SET PATH_APP_SRC "${PATH_APP}/src")
 
 include( "${CMAKE_CURRENT_SOURCE_DIR}/cmake/files_framework.cmake" )
-include( "${CMAKE_CURRENT_SOURCE_DIR}/cmake/files_tasks.cmake" )
+include( "${CMAKE_CURRENT_SOURCE_DIR}/cmake/files_exercises.cmake" )
 
 set(FILES_BASE
 	"${PATH_APP}/CMakeLists.txt"
@@ -26,7 +26,7 @@ set(FILES_BASE
 	"${PATH_APP}/README.md"
 	
 	"${CMAKE_CURRENT_SOURCE_DIR}/cmake/files_framework.cmake"
-	"${CMAKE_CURRENT_SOURCE_DIR}/cmake/files_tasks.cmake"
+	"${CMAKE_CURRENT_SOURCE_DIR}/cmake/files_exercises.cmake"
 )
 
 # Merge all the lists of files together...

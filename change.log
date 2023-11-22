@@ -1,6 +1,18 @@
 Code-Exercise-Framework-Cpp ChangeLog
 -------------------------------------
 
+1.1
+---
+- Added: Initial commentary.
+- Changed: More Task to Exercise renaming.
+
+1.0
+---
+- Changed: Renamed all instances of 'Task' to 'Exercise' to better fit Git-repo name and increase accuracy.
+- Added: Manager class to which all Exercises auto-register themselves upon being definition.
+- Added: Exercise Base/Derive classes with CRTP to allow for auto-registration.
+
+
 0.5
 ------------------------
 - Changed: Better parameter names.

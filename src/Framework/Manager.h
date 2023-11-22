@@ -12,6 +12,10 @@
 // 1st Party (This application)
 #include "ExerciseBase.h"
 
+// Manager is a Singleton which accepts incoming registrations from Exercise classes to be run.
+//
+// Each Exercise implementation, e.g. ExerciseExample or ExerciseTemplate, is expected to derive from ExerciseDerived.
+// ExerciseDerived registers itself with this Manager class to then be executed in Main().
 class Manager {
 public:
 

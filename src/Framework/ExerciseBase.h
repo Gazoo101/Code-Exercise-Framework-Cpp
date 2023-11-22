@@ -12,6 +12,9 @@
 // 1st Party (This application)
 #include "FunctionRunner.h"
 
+// ExerciseBase exists so the Manager class can point to exercises, which derive from ExerciseDerived, without knowing the
+// template parameters used with ExerciseDerived.
+
 class ExerciseBase {
 public:
 

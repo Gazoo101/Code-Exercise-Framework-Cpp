@@ -13,14 +13,24 @@
 #include "ExerciseBase.h"
 #include "Manager.h"
 
+// ExerciseDerived provides registration-functionality and a FunctionRunner instance (via ExerciseBase) for exercises to use.
+// 
+// It relies on the Curiously Recurring Template Pattern (CRTP) to allow each exercise to automatically instantiate itself,
+// and pass itself along to the Manager class for later execution.
+//
 template <typename DerivedExerciseClass, bool isEnabled = true>
 class ExerciseDerived : public ExerciseBase {
 public:
 
-    //virtual ~ExerciseDerived() = default;
+    virtual ~ExerciseDerived() = default;
 
     static bool RegisterExercise()
     {
+        if constexpr (isEnabled == false)
+        {
+            return false;
+        }
+
         auto& manager = Manager::Instance();
 
         auto exerciseClass = std::make_unique<DerivedExerciseClass>();

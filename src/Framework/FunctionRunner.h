@@ -14,6 +14,7 @@
 // 1st Party (This application)
 
 
+// FunctionRunner exists to minimize boiler-plate code needed to test run self-contained exercise-related functions.
 class FunctionRunner {
 public:
 	FunctionRunner();
