@@ -3,12 +3,12 @@
 // This file is a part of Cinder-CEF, https://github.com/Gazoo101/Code-Exercise-Framework-Cpp
 #pragma once
 
-#include "Framework/TaskBase.h"
+#include "Framework/ExerciseDerived.h"
 
-class TaskTemplate : public TaskBase
+class TaskTemplate : public ExerciseDerived<TaskTemplate, true>
 {
 public:
-	void RunTest() override;
+	void Execute() override;
 
 private:
 

@@ -91,7 +91,7 @@ int garbageCollection( vector<string>& garbage, vector<int>& travel )
 
 }
 
-void TaskTask2391::RunTest()
+void TaskTask2391::Execute()
 {
 	using VectorInt = std::vector<int>;
 	using VectorString = std::vector<string>;

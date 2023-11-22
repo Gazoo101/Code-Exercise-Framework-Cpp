@@ -2,10 +2,18 @@
 // This code is licensed under MIT license (see LICENSE.txt for details)
 // This file is a part of Cinder-CEF, https://github.com/Gazoo101/Code-Exercise-Framework-Cpp
 
-#include "TestHelper.h"
+// Std. Library
+
+
+// 3rd Party
+
+
+// 1st Party (This application)
+
+#include "FunctionRunner.h"
 #include <Windows.h>
 
-TestHelper::TestHelper()
+FunctionRunner::FunctionRunner()
 {
 	// Std. Print to Visual Studio's Output windows
 	mPrintFunc = []( std::string const& str )
@@ -17,7 +25,7 @@ TestHelper::TestHelper()
 
 }
 
-TestHelper::TestHelper( std::function<void( std::string const& str )> const& printFunc )
+FunctionRunner::FunctionRunner( std::function<void( std::string const& str )> const& printFunc )
 	: mPrintFunc( printFunc )
 {
 

@@ -1,6 +1,12 @@
 Code-Exercise-Framework-Cpp ChangeLog
 -------------------------------------
 
+0.5
+------------------------
+- Changed: Better parameter names.
+- Added: Leetcode Task example.
+- Added: Execute with known result.
+
 0.4
 ------------------------
 - Changed: Transitioned away from trademark-named framework, to more genericly usable frame-work.

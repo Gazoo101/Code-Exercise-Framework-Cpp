@@ -9,7 +9,7 @@
 // 3rd Party
 
 // 1st Party
-#include "Framework/TestHelper.h"
+//#include "Framework/FunctionRunner.h"
 
 #include "TaskExample.h"
 
@@ -57,7 +57,7 @@ void Task7Void()
 
 }
 
-void TaskExample::RunTest()
+void TaskExample::Execute()
 {
 	using VectorInt = std::vector<int>;
 

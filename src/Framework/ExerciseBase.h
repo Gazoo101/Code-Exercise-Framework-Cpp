@@ -3,17 +3,24 @@
 // This file is a part of Cinder-CEF, https://github.com/Gazoo101/Code-Exercise-Framework-Cpp
 #pragma once
 
-#include "TestHelper.h"
+// Std. Library
 
-class TaskBase {
+
+// 3rd Party
+
+
+// 1st Party (This application)
+#include "FunctionRunner.h"
+
+class ExerciseBase {
 public:
 
-	virtual ~TaskBase() = default;
+	virtual ~ExerciseBase() = default;
 	
-	virtual void RunTest() = 0;
+	virtual void Execute() = 0;
 
 protected:
 
-	TestHelper mTestHelper;
+	FunctionRunner mTestHelper;
 
 };

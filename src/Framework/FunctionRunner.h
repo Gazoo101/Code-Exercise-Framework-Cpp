@@ -3,16 +3,22 @@
 // This file is a part of Cinder-CEF, https://github.com/Gazoo101/Code-Exercise-Framework-Cpp
 #pragma once
 
+// Std. Library
 #include <vector>
 #include <sstream>
 #include <functional>
 
+// 3rd Party
 
-class TestHelper {
+
+// 1st Party (This application)
+
+
+class FunctionRunner {
 public:
-	TestHelper();
-	TestHelper( std::function<void( std::string const& str )> const& printFunc );
-	~TestHelper() = default;
+	FunctionRunner();
+	FunctionRunner( std::function<void( std::string const& str )> const& printFunc );
+	~FunctionRunner() = default;
 
 	template <typename Functor, typename... Types>
 	void Execute( Functor&& f, Types&& ... args );
@@ -41,7 +47,7 @@ private:
 
 
 template <typename Functor, typename... Types>
-void TestHelper::Execute( Functor&& function, Types&& ... args )
+void FunctionRunner::Execute( Functor&& function, Types&& ... args )
 {
 	mStreamInputParams.clear();
 	mStreamInputParams.str( "" );
@@ -70,7 +76,7 @@ void TestHelper::Execute( Functor&& function, Types&& ... args )
 }
 
 template <typename ResultType, typename Functor, typename... Types>
-void TestHelper::ExecuteWithResult( ResultType&& expectedResult, Functor&& function, Types&& ... args )
+void FunctionRunner::ExecuteWithResult( ResultType&& expectedResult, Functor&& function, Types&& ... args )
 {
 	Execute( function, std::forward<Types>( args )... );
 
@@ -86,7 +92,7 @@ void TestHelper::ExecuteWithResult( ResultType&& expectedResult, Functor&& funct
 }
 
 template <typename Type>
-void TestHelper::PrintToStream( std::ostringstream& stream, std::vector<Type> const& valueVec )
+void FunctionRunner::PrintToStream( std::ostringstream& stream, std::vector<Type> const& valueVec )
 {
 	stream << "[";
 	std::copy( valueVec.begin(), valueVec.end(), std::ostream_iterator<Type>( stream, "," ) );
