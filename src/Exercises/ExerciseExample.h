@@ -5,7 +5,7 @@
 
 #include "Framework/ExerciseDerived.h"
 
-class TaskExample : public ExerciseDerived<TaskExample, true>
+class ExerciseExample : public ExerciseDerived<ExerciseExample, true>
 {
 public:
 	void Execute() override;

@@ -55,12 +55,13 @@ void Task7Void()
 
 }
 
-void TaskExample::Execute()
+void ExerciseExample::Execute()
 {
 	using VectorInt = std::vector<int>;
 
 	mTestHelper.Execute( Task1Integer, 99099 );
 	mTestHelper.Execute( Task2Vector, VectorInt{ 10, 20, 30, 40, 50 } );
+	mTestHelper.ExecuteWithResult( VectorInt{ 1, 2, 3, 4, 5 }, Task2Vector, VectorInt{ 10, 20, 30, 40, 50 } );
 	mTestHelper.Execute( Task3VectorIntFloat, VectorInt{ 10, 20, 30, 40, 50 }, 88488, 342.33 );
 
 	// If the function to execute strictly requires a reference, we can *not* use a list initializer as it cannot be
