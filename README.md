@@ -15,9 +15,9 @@ This framework reduces boiler-plate code when solving C++ coding exercises, such
 
 The recommended approach to solving a new exercise using this framework is:
 
-- Create a new .cpp and .h file in the [src/Exercises]'s folder.
-- Add these files to the CMake [cmake/files_exercises.cmake] file.
-- Copy the template class from [src/Exercises/ExerciseTemplate.h].
+- Create a new .cpp and .h file in the [src/Exercises](src/Exercises)'s folder.
+- Add these files to the CMake [cmake/files_exercises.cmake](cmake/files_exercises.cmake) file.
+- Copy the template class from [src/Exercises/ExerciseTemplate.h](src/Exercises/ExerciseTemplate.h).
 - Adjust the class name from `ExerciseTemplate` to <Your Exercise Name>.
 - Implement the exercise solution!
 
