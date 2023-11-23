@@ -24,7 +24,7 @@ The recommended approach to solving a new exercise using this framework is:
 ### Exercise class
 
 Having copied the ExerciseTemplate content, we just need to replace the `ExerciseTemplate` name as shown below:
-```
+```C++
 //    ↓-----------------------------------------↓---- Replace the class name(s) here.
 class ExerciseTemplate : public ExerciseDerived<ExerciseTemplate, true>
 {
@@ -41,7 +41,7 @@ The second template parameter enables/disables the Exercise class from registeri
 Finally, you implement your solution to test in the exercise .cpp file.
 
 Here's what such a solution could look like (an excerpt from [src/Exercises/ExerciseExample.cpp]), along with some test cases being applied:
-```
+```C++
 // std.dev
 #include <vector>
 #include <iostream>
